@@ -13,4 +13,5 @@ class JSONStorage:
     def load(self):
         with open('data.json', "r") as json_file:
             data = json.load(json_file)
+        json_file.close()   
         return data
